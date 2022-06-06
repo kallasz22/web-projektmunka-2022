@@ -1,9 +1,12 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0px;
+    display: grid;
 }
 
 .header-grid{
+    position: sticky;
+    top: 0px;
     display: grid;
     grid-template-columns: 20% 15% 15% 15%;
     height: 100%;
@@ -15,14 +18,16 @@ header{
     height: 300px;
 }
 
-.grid-item{
+.header-grid-item{
     display: flex;
     align-items: center;
     justify-items: center;
     justify-content: center;
+    transition: 0.15s;
 }
 
-.grid-item:hover{
+.header-grid-item:hover{
+    transition: 0.2s;
     background-color: rgb(51, 51, 51);
 }
 
@@ -43,12 +48,30 @@ a:hover{
     justify-content: center;
 }
 
-h1{
-
-}
-
 main{
     display: grid;
     width: 75%;
-    justify-items: center;
+    justify-self: center;
+}
+
+.kiemelt-info{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(255, 0, 0, 0.551);
+    padding: 5px;
+    border-left: 10px solid red;
+    transition: 0.2s;
+}
+.kiemelt-info:hover{
+    transition: 0.4s;
+    border-left: 20px solid green;
+    background-color: rgba(0, 128, 0, 0.505);
+}
+
+.grid-jaratok{
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    border: solid 1px black;
+    padding: 5px;
+    border-radius: 15px;
 }

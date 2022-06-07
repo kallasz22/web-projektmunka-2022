@@ -54,6 +54,7 @@ main{
     display: grid;
     width: 75%;
     justify-self: center;
+    margin-bottom: 100px;
 }
 
 .kiemelt-info{
@@ -86,7 +87,7 @@ footer{
     font-family: 'Roboto', sans-serif;
     background-color: black;
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     left: 0px;
     width: 100%;
@@ -94,6 +95,14 @@ footer{
 }
 
 #item1{
+    display: flex;
+    white-space: pre;
+    align-items: center;
     padding-left: 10px;
     padding-top: 5px;
+}
+
+#nana{
+    width: 30px;
+    padding-right: 5px;
 }

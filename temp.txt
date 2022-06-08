@@ -1,0 +1,7 @@
+Járat   Megállók    Jármű db    1. végpont  2. végpont  Jármű típus Típus
+1   17  20  II. IV. csuklós éjjel-nappal
+1L  13  15  II. III.    szóló   éjjel-nappal
+1LA 15  12  II. III.    szóló   éjjel-nappal
+2   7   4   IV. szóló   éjjel-nappal
+3   18  15  I.  II. szóló   éjjel-nappal
+4   15  21  I.  -   csuklós éjjel-nappal

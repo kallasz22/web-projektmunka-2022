@@ -21,19 +21,22 @@
 </head>
 <body>
     <div class="header-grid">
-        <div class="title"><a href="index.html" style="color: black; font-weight: bold;">SPRINGWOOD</a></div>
+        <!-- <div class="title"><a href="index.html" style="color: black; font-weight: bold;">SPRINGWOOD</a></div>
+         -->
+        <h1 id="con" style="text-align: center;">SPRINGWOOD</h1>
+        <!-- <div class="header-grid-item"></div> -->
         <div class="header-grid-item"><a href="/hirek/" target="_blank">HÍREK</a></div>
         <div class="header-grid-item"><a href="/kozossegi-kozlekedes/" target="_blank">KÖZÖSSÉGI KÖZLEKEDÉS</a></div>
         <div class="header-grid-item"><a href="https://citiesskylines.com" target="_blank">A CITIESRŐL</a></div>
     </div>
     <main>
-        <h1 id="con">Springwood<a href="#magyaraz" style="color: black"><sup style="color: blue;">1</sup></a></h1>
-        <p><strong>Itt lesznek megtalálhatóak a város adatai.</strong></p>
+        <h1 id="con">Springwood<a href="#magyaraz" style="color: black"><sup class="jelmagyaraz">1</sup></a></h1>
+        <p><strong>Itt találhatóak meg a város adatai.</strong></p>
         <table border="1">
-            <tr><td colspan="2"><h2 style="text-align: center;">Főbb adatok</h2></td></tr>
+            <th colspan="2"><h2 style="text-align: center">Adatok</h2></th>
             <tr>
                 <td>Népesség:</td>
-                <td><strong>kérdőjeles 26000</strong></td>
+                <td><strong>26000<a href="#magyaraz" style="color: black"><sup class="jelmagyaraz">2</sup></a></strong></td>
             </tr>
             <tr>
                 <td>Terület: </td>
@@ -41,7 +44,11 @@
             </tr>
         </table>
         <hr width="100%" noshade="" align="center">
-        <h2 id="magyaraz">Jegyzetek</h2>
+        <h2 id="magyaraz">Lábjegyzet</h2>
+        <ol>
+            <li>nem foglalkoztam vele sokat</li>
+            <li>természetesen folyamatosan változik</li>
+        </ol>
     </main>
     <footer>
         <div id="item1"><img id="nana" src="nana/nana1.webp" alt="">Az oldalt létrehozta: <strong id="con">kallasz</strong></div>
@@ -49,7 +56,6 @@
     <script defer>
         let nana = document.querySelector('#item1');
         let i = 1;
-        // csere();
         window.setInterval(csere, 1000);
         function csere() {
             i++;
@@ -57,8 +63,6 @@
                 i = 1;
             }
             nana.innerHTML = `<div id="item1"><img id="nana" src="nana/nana${i}.webp" alt="">Az oldalt létrehozta: <strong id="con">kallasz</strong></div>`;
-            // alert(nana.innerHTML);
-            // window.setTimeout(csere, 1000);
         }
     </script>
 </body>

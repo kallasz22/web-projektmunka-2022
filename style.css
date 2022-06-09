@@ -74,12 +74,18 @@ main{
 
 .grid-jaratok{
     display: grid;
-    grid-template-columns: repeat(7, auto);
-    padding: 5px;
+    /* grid-template-columns: repeat(7, auto); */
+    width: 65%;
+    grid-template-columns: 10% 15% 15% 15% 15% 15% 15%;
+    justify-self: center;
+    border: 1px solid black;
 }
 
 .grid-jaratok-item{
+    display: flex;
     border: 1px solid black;
+    padding: 5px;
+    justify-content: center;
 }
 
 table{
@@ -111,4 +117,21 @@ footer{
 
 .jelmagyaraz{
     color: blue;
+}
+
+.kek{
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.sarga{
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+.szurke{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
 }

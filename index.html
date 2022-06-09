@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Springwood vagy mi</title>
+    <title>SPRINGWOOD</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,32 +12,45 @@
 
     <link rel="stylesheet" href="style.css">
     <style>
-        #con{
+        .con{
             font-family: 'Consolas';
             letter-spacing: 5px;
+        }
+        #idezet{
+            border-left: 10px solid grey;
+            padding-left: 10px;
+        }
+        #float-img{
+            float: right;
+            width: 20%;
+        }
+        header{
+            height: 100px;
+        }
+        .header-grid{
+            grid-template-columns: 15% 15% 15% 15%;
         }
     </style>
     
 </head>
 <body>
-    <nav class="header-grid">
-        <!-- <div class="title"><a href="index.html" style="color: black; font-weight: bold;">SPRINGWOOD</a></div>
-         -->
-        <h1 id="con" style="text-align: center;">SPRINGWOOD</h1>
-        <!-- <div class="header-grid-item"></div> -->
-        <div class="header-grid-item"><a href="/hirek/" target="_blank">HÍREK</a></div>
-        <div class="header-grid-item"><a href="/kozossegi-kozlekedes/" target="_blank">KÖZÖSSÉGI KÖZLEKEDÉS</a></div>
-        <div class="header-grid-item"><a href="Screenshot 2022-06-08 173847.png" target="_blank">TÉRKÉP</a></div>
-        <div class="header-grid-item"><a href="https://citiesskylines.com" target="_blank">A CITIESRŐL</a></div>
+    <header>
+        <h1 class="con cen">SPRINGWOOD<sup>©</sup></h1>
+        <nav class="header-grid" style="justify-content: center;">
+            <div class="header-grid-item"><a href="/hirek/index.html">HÍREK</a></div>
+            <div class="header-grid-item"><a href="/kozlekedes/index.html">KÖZLEKEDÉS</a></div>
+            <div class="header-grid-item"><a href="cities/Screenshot 2022-06-08 173847.png" target="_blank">TÉRKÉP</a></div>
+            <div class="header-grid-item"><a href="https://citiesskylines.com" target="_blank">A CITIESRŐL</a></div>
         </nav>
+    </header>
+    
     <main>
-        <h1 id="con">Springwood<a href="#magyaraz" style="color: black"><sup class="jelmagyaraz">1</sup></a></h1>
-        <p><strong>Itt találhatóak meg a város adatai.</strong></p>
+        <h1 class="con">Springwood<a href="#magyaraz"><sup class="magyaraz">1</sup></a></h1>
+        <p>Ez egy honlap és ismertető a Citiesben épülő városomról, Springwoodról. Alattam található kettő érdekes ...khm... adat a városról, majd egy ismertető a játékkal kapcsolatban.</p>
         <table cellpadding="2px" cellspacing="2px" border="1">
             <th colspan="3"><h2 style="text-align: center">Népesség</h2></th>
             <tr>
-                <!-- <td rowspan="5">Népesség:</td> -->
-                <td rowspan="5" style="text-align: center;">16895<a href="#magyaraz" style="color: black"><sup class="jelmagyaraz">2</sup></a></td>
+                <td class="cen" rowspan="5">16895<a href="#magyaraz"><sup class="magyaraz">2</sup></a></td>
                 <td>1103 gyerek</td>
             </tr>
             <tr><td>2682 kamasz</td></tr>
@@ -45,31 +58,36 @@
             <tr><td>4671 felnőtt</td></tr>
             <tr><td>4346 idős</td></tr>
         </table>
-        <h2>Röviden a Cities Skylinesról - angolul <a href="#jelmagyaraz"><sup class="jelmagyaraz">3</sup></a></h2>
-        <p>Cities: Skylines is a 2015 city-building game developed by Colossal Order and published by Paradox Interactive. The game is a single-player open-ended city-building simulation. Players engage in urban planning by controlling zoning, road placement, taxation, public services, and public transportation of an area. They also work to manage various elements of the city, including its budget, health, employment, and pollution levels. It is also possible to maintain a city in a sandbox mode, which provides more creative freedom for the player.</p>
-        <p>Az egész Wikipédia cikket <a href="https://en.wikipedia.org/wiki/Cities%3A_Skylines" target="_blank" style="color: blue;">ide</a> kattintva érheted el.</p>
+        <h2>Oktatás</h2>
+        <p>A tanulókat a városvezetés ösztöndíjjal segíti. Bővebben itt>> <a href="#magyaraz"><sup class="magyaraz">3</sup></a></p>
+        <h1>Röviden a Cities Skylinesról - angolul <a href="#magyaraz"><sup class="magyaraz">4</sup></a></h1>
+        <p id="idezet"><img id="float-img" src="https://images.ctfassets.net/u73tyf0fa8v1/7jBV1Wu7TNcNjL0XGKYSP7/e6e17a52bb17c8f7ff7f4f6eb8eb1fce/cities_logo.png?w=640&q=75" alt="">Cities: Skylines is a 2015 city-building game developed by Colossal Order and published by Paradox Interactive. The game is a single-player open-ended city-building simulation. Players engage in urban planning by controlling zoning, road placement, taxation, public services, and public transportation of an area. They also work to manage various elements of the city, including its budget, health, employment, and pollution levels. It is also possible to maintain a city in a sandbox mode, which provides more creative freedom for the player.</p>
+        <p>Az egész Wikipédia cikket <a href="https://en.wikipedia.org/wiki/Cities%3A_Skylines" target="_blank" class="magyaraz">ide</a> kattintva érheted el.</p>
         <hr width="90%" noshade="" align="center">
         <h2 id="magyaraz">Lábjegyzet</h2>
         <ol>
             <li>Nem foglalkoztattam a nevével sokat magam.</li>
             <li>Természetesen folyamatosan változik.</li>
+            <li>Lehetne képzeletben cifrázni, de ennyire a Cities sem képes. Így a 'Bővebben itt' "link" sem él.</li>
             <li>Magyarul nem elérhető Wikipédia cikk.</li>
         </ol>
-        
     </main>
     <footer>
-        <div id="item1"><img id="nana" src="nana/nana1.webp" alt="">Az oldalt létrehozta: <strong id="con">kallasz</strong></div>
+        <div class="footer-grid">
+            <div class="footer-grid-item" id="nana"><img id="nana-img" src="nana/nana1.webp" alt=""></div>
+            <div class="footer-grid-item">Az oldalt készítette: <strong class="con">kallasz</strong></div>
+        </div>
     </footer>
     <script defer>
-        let nana = document.querySelector('#item1');
+        let nana = document.querySelector('#nana');
         let i = 1;
-        window.setInterval(csere, 1000);
+        setInterval(csere, 500);
         function csere() {
             i++;
             if (i == 5) {
-                i = 1;
+                i=1;
             }
-            nana.innerHTML = `<div id="item1"><img id="nana" src="nana/nana${i}.webp" alt="">Az oldalt létrehozta: <strong id="con">kallasz</strong></div>`;
+            nana.innerHTML = `<div class="footer-grid-item" id="nana"><img id="nana-img" src="nana/nana${i}.webp" alt=""></div>`;
         }
     </script>
 </body>

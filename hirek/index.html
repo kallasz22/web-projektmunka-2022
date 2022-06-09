@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hírek</title>
     <link rel="stylesheet" href="../style.css">
+    <script src="../header-js.js" defer></script>
 
     <style>
         h1{
             text-align: center;
         }
-
         main{
             display: grid;
             width: 50%;
         }
-
         .hirek-grid-item{
             display: flex;
             align-items: center;
@@ -26,40 +25,31 @@
             border-radius: 10px;
             margin-bottom: 20px;
         }
-
         img{
             height: 160px;
             padding: 20px;
         }
+        #hirek{
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <div class="header-grid">
-        <div class="title"><a href="../index.html" target="_blank" style="color: black;">SPRINGWOOD</a></div>
-        <div class="header-grid-item"><a href="/hirek/" target="_blank" style="font-weight: bold;">HÍREK</a></div>
-        <div class="header-grid-item"><a href="/kozossegi-kozlekedes/">KÖZÖSSÉGI KÖZLEKEDÉS</a></div>
-        <div class="header-grid-item"><a href="https://citiesskylines.com" target="_blank">A CITIESRŐL</a></div>
-    </div>
+    <div class="header-grid"></div>
     <main>
         <h1>Hírek</h1>
         <div class="hirek-grid-item">
+            <img class="icon" src="../cities/egyetem-latvanyterv.png" alt="">
+            <h2>Egyetem indulna az I. kerületben<a class="gomb" href="I-uj-egyetem-latvanyterv.html">>></a></h2>
+        </div>
+        <div class="hirek-grid-item">
             <img src="../nana/nana1.webp" alt="">
-            <h2>Változás az <span class="sarga">1L</span> vonalán <a class="kek" href="1L-valtozas.html">>></a></h2>
+            <h2>Változás az <span class="sarga">1L</span> vonalán<a class="gomb" href="1L-valtozas.html">>></a></h2>
         </div>
         <div class="hirek-grid-item">
-            <img src="../nana/nana2.webp" alt="">
-            <h2>Változás az <span class="sarga">1L</span> vonalán <a class="kek" href="1L-valtozas.html">>></a></h2>
+            <img src="../nana/nana1.webp" alt="">
+            <h2>Az új buszjárat <span class="kek">4</span> jelzéssel<a class="gomb" href="4-bevezetes.html">>></a></h2>
         </div>
-        <div class="hirek-grid-item">
-            <img src="../nana/nana3.webp" alt="">
-            <h2>Változás az <span class="sarga">1L</span> vonalán <a class="kek" href="1L-valtozas.html">>></a></h2>
-        </div>
-        <div class="hirek-grid-item">
-            <img src="../nana/nana4.webp" alt="">
-            <h2>Változás az <span class="sarga">1L</span> vonalán <a class="kek" href="1L-valtozas.html">>></a></h2>
-        </div>
-
     </main>
-    
 </body>
 </html>

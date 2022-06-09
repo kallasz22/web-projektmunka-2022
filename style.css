@@ -1,7 +1,7 @@
 body{
-    
     margin: 0px;
     display: grid;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .header-grid{
@@ -9,7 +9,7 @@ body{
     position: sticky;
     top: 0px;
     display: grid;
-    grid-template-columns: 20% 15% 15% 15% 15%;
+    grid-template-columns: 15% 15% 15% 15% 15%;
     height: 100%;
     height: fit-content;
     min-height: 40px;
@@ -17,7 +17,7 @@ body{
 }
 
 header{
-    height: 300px;
+    background-color: rgb(116, 116, 116);
 }
 
 .header-grid-item{
@@ -27,35 +27,30 @@ header{
     justify-content: center;
     transition: 0.15s;
 }
+.header-grid-item>a{
+    color: white;
+}
 
 .header-grid-item:hover{
     transition: 0.2s;
-    background-color: rgb(51, 51, 51);
+    background-color: rgba(51, 51, 51, 0.50);
 }
 
 a{
     text-decoration: none;
-    color: white;
 }
 
-a:hover{
-    transition: 0.3;
-    color: whitesmoke;
-}
-
-.title{
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
+#title{
+    color: black;
 }
 
 main{
     font-family: 'Roboto', sans-serif;
     display: grid;
-    width: 75%;
+    max-width: 1000px;
     justify-self: center;
     margin-bottom: 100px;
+    margin-top: 25px;
 }
 
 .kiemelt-info{
@@ -74,11 +69,9 @@ main{
 
 .grid-jaratok{
     display: grid;
-    /* grid-template-columns: repeat(7, auto); */
-    width: 65%;
-    grid-template-columns: 10% 15% 15% 15% 15% 15% 15%;
-    justify-self: center;
-    border: 1px solid black;
+    grid-template-columns: 5% 10% 10% 10% 10% 10% 10%;
+    justify-content: center;
+    gap: 1px;
 }
 
 .grid-jaratok-item{
@@ -94,28 +87,32 @@ table{
 
 footer{
     font-family: 'Roboto', sans-serif;
-    background-color: black;
-    color: white;
-    position: fixed;
+    position: relative;
     bottom: 0px;
     left: 0px;
     width: 100%;
-    padding: 10px 0px 10px 0px;
 }
 
-#item1{
+.footer-grid{
+    display: grid;
+    grid-template-columns: 70px 320px;
+    background-color: black;
+    height: 70px;
+}
+
+.footer-grid-item{
     display: flex;
-    white-space: pre;
     align-items: center;
-    padding-left: 10px;
+    color: white;
+    padding: 10px;
+    white-space: pre;
 }
 
-#nana{
-    width: 30px;
-    padding-right: 5px;
+#nana-img{
+    height: 30px;
 }
 
-.jelmagyaraz{
+.magyaraz{
     color: blue;
 }
 
@@ -134,4 +131,56 @@ footer{
 table{
     margin-left: auto;
     margin-right: auto;
+}
+
+.cen{
+    text-align: center;
+}
+
+.gomb{
+    display: inline-flex;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 60px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px rgb(67, 67, 67);
+    transition: 0.2s;
+    margin: 10px;
+}
+.gomb:hover{
+    box-shadow: 2px 2px rgb(67, 67, 67);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.gomb:active{
+    box-shadow: 1px 1px rgb(67, 67, 67);
+}
+
+.img{
+    display: grid;
+    width: 80%;
+    border: 1px solid black;
+    justify-self: center;
+    justify-items: center;
+    padding: 5px;
+    margin: 20px;
+}
+
+.icon{
+    height: 158px;
+}
+
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
